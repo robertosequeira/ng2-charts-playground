@@ -36,7 +36,7 @@ export class LineChartComponent implements OnInit {
 
   ngOnInit(): void {
     this.lineChartData = [
-      { data: [65, 59, 80, 81, 56, 55, 40, 11, 78], label: '2018', fill: this.fill  },
+      { data: [65, 59, 80, 81, 56, 55, 40, 11, 78], label: '2018', fill: this.fill },
       { data: [59, 64, 21, 26, 66, 7, 29, 34, 19], label: '2019', fill: this.fill },
       { data: [31, 9, 58, 23, 49, 96, 74, 29, 26], label: '2020', fill: this.fill }
     ];
@@ -117,7 +117,7 @@ export class LineChartComponent implements OnInit {
   }
 
   toggleSteppedLine(): void {
-    const styles = [ true, false, 'before', 'after', 'middle'];
+    const styles = [true, false, 'before', 'after', 'middle'];
 
     const currentLineStyle = this.chart.options.elements.line.stepped;
 

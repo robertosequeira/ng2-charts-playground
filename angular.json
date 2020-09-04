@@ -64,6 +64,10 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "gh-pages": {
+              "outputPath": "docs",
+              "baseHref": "/ng2-charts-playground/"
             }
           }
         },
@@ -75,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "charts:build:production"
+            },
+            "gh-pages": {
+              "browserTarget": "charts:build:gh-pages"
             }
           }
         },
