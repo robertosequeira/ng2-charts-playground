@@ -713,12 +713,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/__ivy_ngcc__/fesm2015/ng2-charts.js");
 /* harmony import */ var _common_toastr_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @common/toastr.service */ "./src/app/common/toastr.service.ts");
 /* harmony import */ var _common_charts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @common/charts.service */ "./src/app/common/charts.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
 
 
 
 
+
+function LineChartComponent_div_9_Template(rf, ctx) { if (rf & 1) {
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r1.toggleFill(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Fill");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r3.toggleColors(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Colors");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_5_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.togglePointStyle(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Point Style");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.toggleSteppedLine(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Stepped Line");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_11_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.updateRadius(0 - 1); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "-");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " Radius ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_div_9_Template_button_click_16_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.updateRadius(1); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "+");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
 class LineChartComponent {
     constructor(toastrService, chartsService) {
         this.toastrService = toastrService;
@@ -726,8 +766,13 @@ class LineChartComponent {
         this.lineChartLegend = true;
         this.lineChartType = 'line';
         this.lineChartPlugins = [];
-        /* misc */
+        /* Misc: Settings initialized to default values */
         this.fill = true;
+        this.pointStyles = ['circle', 'cross', 'crossRot', 'dash', 'line', 'rect', 'rectRounded', 'rectRot', 'star'];
+        this.pointStyle = 'circle';
+        this.radius = 3;
+        this.steppedStyles = [true, false, 'before', 'after', 'middle'];
+        this.steppedStyle = false;
     }
     ngOnInit() {
         this.lineChartData = [
@@ -744,12 +789,9 @@ class LineChartComponent {
             },
             elements: {
                 point: {
-                    pointStyle: 'circle',
-                    radius: 10
+                    pointStyle: this.pointStyle,
+                    radius: this.radius
                 },
-                line: {
-                    stepped: false
-                }
             }
         };
         this.lineChartColors = this.getChartColors(this.lineChartData.length);
@@ -782,36 +824,40 @@ class LineChartComponent {
         this.chart.colors = this.getChartColors(this.chart.datasets.length);
     }
     togglePointStyle() {
-        var _a, _b;
-        const styles = ['circle', 'cross', 'crossRot', 'dash', 'line', 'rect', 'rectRounded', 'rectRot', 'star'];
-        const currentPointStyle = (_b = (_a = this.chart.options.elements) === null || _a === void 0 ? void 0 : _a.point) === null || _b === void 0 ? void 0 : _b.pointStyle;
-        const nextStyle = currentPointStyle ? (styles.indexOf(currentPointStyle) + 1) % styles.length : 0;
-        /* this is mainly to keep track of the current setting but it does not apply the chage */
-        this.lineChartOptions.elements.point.pointStyle = styles[nextStyle];
-        /* Any of both options work */
-        this.lineChartData.forEach(data => data.pointStyle = styles[nextStyle]);
-        // this.chart.datasets.forEach(data => data.pointStyle = styles[nextStyle] as PointStyle);
+        const nextStyleIndex = (this.pointStyles.indexOf(this.pointStyle) + 1) % this.pointStyles.length;
+        this.pointStyle = this.pointStyles[nextStyleIndex];
+        // Any of following options work
+        this.lineChartData.forEach(data => data.pointStyle = this.pointStyle);
+        // this.chart.datasets.forEach(data => data.pointStyle = this.pointStyle);
         this.chart.update();
     }
     toggleChartType() {
         this.lineChartType = this.lineChartType === 'line' ? 'bar' : 'line';
     }
     toggleSteppedLine() {
-        const styles = [true, false, 'before', 'after', 'middle'];
-        const currentLineStyle = this.chart.options.elements.line.stepped;
-        let nextStyle;
-        if (currentLineStyle === true) {
-            nextStyle = 1;
+        let nextStyleIndex;
+        if (this.steppedStyle === true) {
+            nextStyleIndex = 1;
         }
-        else if (currentLineStyle === false) {
-            nextStyle = 2;
+        else if (this.steppedStyle === false) {
+            nextStyleIndex = 2;
         }
         else {
-            nextStyle = (styles.indexOf(currentLineStyle) + 1) % styles.length;
+            nextStyleIndex = (this.steppedStyles.indexOf(this.steppedStyle) + 1) % this.steppedStyles.length;
         }
-        this.lineChartOptions.elements.line.stepped = styles[nextStyle];
-        this.lineChartData.forEach(data => data.steppedLine = styles[nextStyle]);
-        // this.chart.datasets.forEach(data => data.steppedLine = styles[nextStyle] as PointStyle);
+        this.steppedStyle = this.steppedStyles[nextStyleIndex];
+        // Any of following options work
+        this.lineChartData.forEach(data => data.steppedLine = this.steppedStyle);
+        // this.chart.datasets.forEach(data => data.steppedLine = this.steppedStyle);
+        this.chart.update();
+    }
+    updateRadius(radius) {
+        radius += this.radius;
+        if (radius < 0 || radius > 10) {
+            return;
+        }
+        this.radius = radius;
+        this.lineChartData.forEach(data => data.radius = this.radius);
         this.chart.update();
     }
     getChartColors(n) {
@@ -824,7 +870,7 @@ LineChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.chart = _t.first);
-    } }, decls: 19, vars: 7, consts: [[1, "mt-3"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", "mx-1", 3, "click"], [1, "d-block"], ["baseChart", "", 3, "datasets", "labels", "options", "colors", "legend", "chartType", "plugins", "chartClick", "chartHover"]], template: function LineChartComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 13, vars: 9, consts: [[1, "mt-3"], [1, "d-flex", "flex-row"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", "mx-1", 3, "click"], ["class", "d-inline-flex", 4, "ngIf"], [1, "d-block"], ["baseChart", "", 3, "datasets", "labels", "options", "colors", "legend", "chartType", "plugins", "chartClick", "chartHover"], [1, "d-inline-flex"], [1, "input-group", "w-auto", "align-items-center"], [1, "input-group-prepend"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", 3, "click"], [1, "mx-1"], [1, "input-group-append"]], template: function LineChartComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "LineChartComponent");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -832,38 +878,29 @@ LineChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Click to toggle chart options");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_6_listener() { return ctx.toggleFill(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Fill");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_8_listener() { return ctx.toggleColors(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Colors");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_10_listener() { return ctx.togglePointStyle(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Point Style");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_12_listener() { return ctx.toggleChartType(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Chart type");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_14_listener() { return ctx.toggleSteppedLine(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Stepped Line");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LineChartComponent_Template_button_click_7_listener() { return ctx.toggleChartType(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "hr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "canvas", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function LineChartComponent_Template_canvas_chartClick_18_listener($event) { return ctx.chartClicked($event); })("chartHover", function LineChartComponent_Template_canvas_chartHover_18_listener($event) { return ctx.chartHovered($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, LineChartComponent_div_9_Template, 18, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "canvas", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function LineChartComponent_Template_canvas_chartClick_12_listener($event) { return ctx.chartClicked($event); })("chartHover", function LineChartComponent_Template_canvas_chartHover_12_listener($event) { return ctx.chartHovered($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx.lineChartType === "line" ? "Bar" : "Line", " Chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.lineChartType === "line");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("datasets", ctx.lineChartData)("labels", ctx.lineChartLabels)("options", ctx.lineChartOptions)("colors", ctx.lineChartColors)("legend", ctx.lineChartLegend)("chartType", ctx.lineChartType)("plugins", ctx.lineChartPlugins);
-    } }, directives: [ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0cy9saW5lLWNoYXJ0L2xpbmUtY2hhcnQuY29tcG9uZW50LnNjc3MifQ== */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0cy9saW5lLWNoYXJ0L2xpbmUtY2hhcnQuY29tcG9uZW50LnNjc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LineChartComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
