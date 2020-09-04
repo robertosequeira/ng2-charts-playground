@@ -4,12 +4,29 @@
 <hr>
 
 <p class="mt-3">Click to toggle chart options</p>
-<div>
-  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleFill()">Fill</button>
-  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleColors()">Colors</button>
-  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="togglePointStyle()">Point Style</button>
-  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleChartType()">Chart type</button>
-  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleSteppedLine()">Stepped Line</button>
+<div class="d-flex flex-row">
+  <div>
+    <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleChartType()">{{ lineChartType === 'line' ? 'Bar' : 'Line' }} Chart</button>
+  </div>
+
+  <div *ngIf="lineChartType === 'line'" class="d-inline-flex">
+    <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleFill()">Fill</button>
+    <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleColors()">Colors</button>
+    <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="togglePointStyle()">Point Style</button>
+    <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleSteppedLine()">Stepped Line</button>
+
+    <div class="input-group w-auto align-items-center">
+      <div class="input-group-prepend">
+        <button type="button" class="btn btn-secondary btn-sm" (click)="updateRadius(-1)">-</button>
+      </div>
+      <div class="mx-1">
+        Radius
+      </div>
+      <div class="input-group-append">
+        <button type="button" class="btn btn-secondary btn-sm" (click)="updateRadius(1)">+</button>
+      </div>
+    </div>
+  </div>
 </div>
 <hr>
 <div class="d-block">

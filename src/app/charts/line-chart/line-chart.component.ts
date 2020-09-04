@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartType, PointStyle } from 'chart.js';
-import { Color, Label, BaseChartDirective } from 'ng2-charts';
+import { Color, Label, BaseChartDirective, ThemeService } from 'ng2-charts';
 
 import { ToastrService } from '@common/toastr.service';
 import { ChartsService } from '@common/charts.service';
@@ -11,6 +11,8 @@ interface ChartElement {
   _chart: Chart;
   _model: any;
 }
+
+type SteppedLine = 'before' | 'after' | 'middle' | boolean;
 
 @Component({
   selector: 'app-line-chart',
@@ -29,8 +31,13 @@ export class LineChartComponent implements OnInit {
   public lineChartType: ChartType = 'line';
   public lineChartPlugins = [];
 
-  /* misc */
-  fill = true;
+  /* Misc: Settings initialized to default values */
+  private fill = true;
+  private pointStyles: PointStyle[] = ['circle', 'cross', 'crossRot', 'dash', 'line', 'rect', 'rectRounded', 'rectRot', 'star'];
+  private pointStyle: PointStyle = 'circle';
+  private radius = 3;
+  private steppedStyles: SteppedLine[] = [true, false, 'before', 'after', 'middle'];
+  private steppedStyle: SteppedLine = false;
 
   constructor(private toastrService: ToastrService, private chartsService: ChartsService) { }
 
@@ -49,12 +56,12 @@ export class LineChartComponent implements OnInit {
       },
       elements: {
         point: {
-          pointStyle: 'circle',
-          radius: 10
+          pointStyle: this.pointStyle,
+          radius: this.radius
         },
-        line: {
-          stepped: false
-        }
+        // line: {
+        //   stepped: true
+        // }
       }
     };
 
@@ -97,17 +104,12 @@ export class LineChartComponent implements OnInit {
   }
 
   togglePointStyle(): void {
-    const styles = ['circle', 'cross', 'crossRot', 'dash', 'line', 'rect', 'rectRounded', 'rectRot', 'star'];
+    const nextStyleIndex = (this.pointStyles.indexOf(this.pointStyle) + 1) % this.pointStyles.length;
+    this.pointStyle =  this.pointStyles[nextStyleIndex];
 
-    const currentPointStyle = this.chart.options.elements?.point?.pointStyle;
-    const nextStyle = currentPointStyle ? (styles.indexOf(currentPointStyle) + 1) % styles.length : 0;
-
-    /* this is mainly to keep track of the current setting but it does not apply the chage */
-    this.lineChartOptions.elements.point.pointStyle = styles[nextStyle] as PointStyle;
-
-    /* Any of both options work */
-    this.lineChartData.forEach(data => data.pointStyle = styles[nextStyle] as PointStyle);
-    // this.chart.datasets.forEach(data => data.pointStyle = styles[nextStyle] as PointStyle);
+    // Any of following options work
+    this.lineChartData.forEach(data => data.pointStyle = this.pointStyle);
+    // this.chart.datasets.forEach(data => data.pointStyle = this.pointStyle);
 
     this.chart.update();
   }
@@ -117,24 +119,34 @@ export class LineChartComponent implements OnInit {
   }
 
   toggleSteppedLine(): void {
-    const styles = [true, false, 'before', 'after', 'middle'];
+    let nextStyleIndex: any;
 
-    const currentLineStyle = this.chart.options.elements.line.stepped;
-
-    let nextStyle: any;
-
-    if (currentLineStyle === true) {
-      nextStyle = 1;
-    } else if (currentLineStyle === false) {
-      nextStyle = 2;
+    if (this.steppedStyle === true) {
+      nextStyleIndex = 1;
+    } else if (this.steppedStyle === false) {
+      nextStyleIndex = 2;
     } else {
-      nextStyle = (styles.indexOf(currentLineStyle) + 1) % styles.length as any;
+      nextStyleIndex = (this.steppedStyles.indexOf(this.steppedStyle) + 1) % this.steppedStyles.length;
     }
 
-    this.lineChartOptions.elements.line.stepped = styles[nextStyle] as any;
-    this.lineChartData.forEach(data => data.steppedLine = styles[nextStyle] as any);
-    // this.chart.datasets.forEach(data => data.steppedLine = styles[nextStyle] as PointStyle);
+    this.steppedStyle = this.steppedStyles[nextStyleIndex];
 
+    // Any of following options work
+    this.lineChartData.forEach(data => data.steppedLine = this.steppedStyle);
+    // this.chart.datasets.forEach(data => data.steppedLine = this.steppedStyle);
+
+    this.chart.update();
+  }
+
+  public updateRadius(radius: number): void {
+    radius += this.radius;
+
+    if (radius < 0 || radius > 10) {
+      return;
+    }
+
+    this.radius = radius;
+    this.lineChartData.forEach(data => data.radius = this.radius);
     this.chart.update();
   }
 
