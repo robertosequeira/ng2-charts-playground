@@ -4,7 +4,7 @@ import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { LineComponent } from './line/line.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { RadarChartComponent } from './charts/radar-chart/radar-chart.component';
@@ -13,11 +13,14 @@ import { PolarAreaChartComponent } from './charts/polar-area-chart/polar-area-ch
 import { DoughnutChartComponent } from './charts/doughnut-chart/doughnut-chart.component';
 import { ScatterChartComponent } from './charts/scatter-chart/scatter-chart.component';
 import { BubbleChartComponent } from './charts/bubble-chart/bubble-chart.component';
+import { OtherChartsComponent } from './other-charts/other-charts.component';
+import { BarComponent } from './bar/bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    LineComponent,
+    OtherChartsComponent,
     LineChartComponent,
     BarChartComponent,
     RadarChartComponent,
@@ -25,7 +28,8 @@ import { BubbleChartComponent } from './charts/bubble-chart/bubble-chart.compone
     PolarAreaChartComponent,
     DoughnutChartComponent,
     ScatterChartComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    BarComponent,
   ],
   imports: [
     BrowserModule,

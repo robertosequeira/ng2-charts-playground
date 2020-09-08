@@ -4,15 +4,18 @@
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['home']">Home</a>
+        <a class="nav-link" [routerLink]="['line']">Line Chart</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['bar']">Bar Chart</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['other']">Other charts</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid mt-3">
   <router-outlet></router-outlet>
 </div>

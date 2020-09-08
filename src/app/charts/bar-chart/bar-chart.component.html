@@ -2,13 +2,53 @@
 
 <hr>
 
-<div class="d-block">
-  <canvas baseChart
-    [datasets]="barChartData"
-    [labels]="barChartLabels"
-    [options]="barChartOptions"
-    [plugins]="barChartPlugins"
-    [legend]="barChartLegend"
-    [chartType]="barChartType">
-  </canvas>
+<p class="mt-3 text-muted">Click to toggle chart options</p>
+
+<div class="d-flex flex-row align-items-center">
+  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleType()">
+    {{ barChartType === 'bar' ? 'Horizontal' : 'Vertical' }} Chart
+  </button>
+
+  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleColors()">Colors</button>
+  <span class="text-muted small">|</span>
+  <button type="button" class="btn btn-secondary btn-sm mx-1" (click)="toggleBorders()">Borders</button>
+  <span class="text-muted small">|</span>
 </div>
+
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="d-block">
+      <canvas baseChart id="barChart"
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        [colors]="barChartColors"
+        (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+
+  </div>
+  <div class="col-lg-6">
+    <div class="d-block">
+      <canvas baseChart id="stackedChart"
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="stackedBarChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        [colors]="barChartColors"
+        (chartClick)="stackedChartClicked($event)">
+      </canvas>
+    </div>
+  </div>
+</div>
+
+
+
+
+

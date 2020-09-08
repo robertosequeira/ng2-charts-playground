@@ -35,8 +35,15 @@
 <hr>
 
 <div class="d-block">
-  <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
-    [chartType]="lineChartType" [plugins]="lineChartPlugins" (chartClick)="chartClicked($event)" (chartHover)="chartHovered($event)">
+  <canvas baseChart
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [colors]="lineChartColors"
+    [legend]="lineChartLegend"
+    [chartType]="lineChartType"
+    [plugins]="lineChartPlugins"
+    (chartClick)="chartClicked($event)">
   </canvas>
 </div>
 
