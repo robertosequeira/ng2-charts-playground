@@ -333,15 +333,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _other_charts_other_charts_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./other-charts/other-charts.component */ "./src/app/other-charts/other-charts.component.ts");
+/* harmony import */ var _line_line_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./line/line.component */ "./src/app/line/line.component.ts");
+/* harmony import */ var _bar_bar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./bar/bar.component */ "./src/app/bar/bar.component.ts");
+
+
 
 
 
 
 
 const routes = [
-    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
-    { path: '', pathMatch: 'full', redirectTo: 'home' }
+    { path: 'line', component: _line_line_component__WEBPACK_IMPORTED_MODULE_3__["LineComponent"] },
+    { path: 'bar', component: _bar_bar_component__WEBPACK_IMPORTED_MODULE_4__["BarComponent"] },
+    { path: 'other', component: _other_charts_other_charts_component__WEBPACK_IMPORTED_MODULE_2__["OtherChartsComponent"] },
+    { path: '', pathMatch: 'full', redirectTo: 'line' }
 ];
 class AppRoutingModule {
 }
@@ -374,14 +380,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = function () { return ["home"]; };
+const _c0 = function () { return ["line"]; };
+const _c1 = function () { return ["bar"]; };
+const _c2 = function () { return ["other"]; };
 class AppComponent {
     constructor() {
         this.title = 'charts';
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 13, vars: 2, consts: [[1, "navbar", "navbar-expand", "navbar-dark", "bg-dark"], ["href", "#", 1, "navbar-brand"], [1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], ["routerLinkActive", "active", 1, "nav-item"], [1, "nav-link", 3, "routerLink"], [1, "nav-item"], ["href", "#", 1, "nav-link"], [1, "container"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 16, vars: 6, consts: [[1, "navbar", "navbar-expand", "navbar-dark", "bg-dark"], ["href", "#", 1, "navbar-brand"], [1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], ["routerLinkActive", "active", 1, "nav-item"], [1, "nav-link", 3, "routerLink"], [1, "container-fluid", "mt-3"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Charts");
@@ -390,23 +398,32 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Home");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Line Chart");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "li", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Link");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "li", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Bar Chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "li", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Other charts");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
     } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -435,7 +452,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/__ivy_ngcc__/fesm2015/ng2-charts.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _line_line_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./line/line.component */ "./src/app/line/line.component.ts");
 /* harmony import */ var _charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./charts/line-chart/line-chart.component */ "./src/app/charts/line-chart/line-chart.component.ts");
 /* harmony import */ var _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./charts/bar-chart/bar-chart.component */ "./src/app/charts/bar-chart/bar-chart.component.ts");
 /* harmony import */ var _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./charts/radar-chart/radar-chart.component */ "./src/app/charts/radar-chart/radar-chart.component.ts");
@@ -444,6 +461,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./charts/doughnut-chart/doughnut-chart.component */ "./src/app/charts/doughnut-chart/doughnut-chart.component.ts");
 /* harmony import */ var _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./charts/scatter-chart/scatter-chart.component */ "./src/app/charts/scatter-chart/scatter-chart.component.ts");
 /* harmony import */ var _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./charts/bubble-chart/bubble-chart.component */ "./src/app/charts/bubble-chart/bubble-chart.component.ts");
+/* harmony import */ var _other_charts_other_charts_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./other-charts/other-charts.component */ "./src/app/other-charts/other-charts.component.ts");
+/* harmony import */ var _bar_bar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./bar/bar.component */ "./src/app/bar/bar.component.ts");
+
+
 
 
 
@@ -468,7 +489,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             ng2_charts__WEBPACK_IMPORTED_MODULE_2__["ChartsModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+        _line_line_component__WEBPACK_IMPORTED_MODULE_5__["LineComponent"],
+        _other_charts_other_charts_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartsComponent"],
         _charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_6__["LineChartComponent"],
         _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_7__["BarChartComponent"],
         _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_8__["RadarChartComponent"],
@@ -476,7 +498,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_10__["PolarAreaChartComponent"],
         _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_11__["DoughnutChartComponent"],
         _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_12__["ScatterChartComponent"],
-        _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_13__["BubbleChartComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_13__["BubbleChartComponent"],
+        _bar_bar_component__WEBPACK_IMPORTED_MODULE_15__["BarComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         ng2_charts__WEBPACK_IMPORTED_MODULE_2__["ChartsModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
@@ -484,7 +507,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         args: [{
                 declarations: [
                     _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                    _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+                    _line_line_component__WEBPACK_IMPORTED_MODULE_5__["LineComponent"],
+                    _other_charts_other_charts_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartsComponent"],
                     _charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_6__["LineChartComponent"],
                     _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_7__["BarChartComponent"],
                     _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_8__["RadarChartComponent"],
@@ -492,7 +516,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_10__["PolarAreaChartComponent"],
                     _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_11__["DoughnutChartComponent"],
                     _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_12__["ScatterChartComponent"],
-                    _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_13__["BubbleChartComponent"]
+                    _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_13__["BubbleChartComponent"],
+                    _bar_bar_component__WEBPACK_IMPORTED_MODULE_15__["BarComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -503,6 +528,42 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
             }]
     }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/bar/bar.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/bar/bar.component.ts ***!
+  \**************************************/
+/*! exports provided: BarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarComponent", function() { return BarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../charts/bar-chart/bar-chart.component */ "./src/app/charts/bar-chart/bar-chart.component.ts");
+
+
+
+class BarComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+BarComponent.ɵfac = function BarComponent_Factory(t) { return new (t || BarComponent)(); };
+BarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BarComponent, selectors: [["app-bar"]], decls: 1, vars: 0, template: function BarComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-bar-chart");
+    } }, directives: [_charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_1__["BarChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Jhci9iYXIuY29tcG9uZW50LnNjc3MifQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-bar',
+                templateUrl: './bar.component.html',
+                styleUrls: ['./bar.component.scss']
+            }]
+    }], function () { return []; }, null); })();
 
 
 /***/ }),
@@ -519,38 +580,179 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarChartComponent", function() { return BarChartComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/__ivy_ngcc__/fesm2015/ng2-charts.js");
+/* harmony import */ var _common_toastr_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @common/toastr.service */ "./src/app/common/toastr.service.ts");
+/* harmony import */ var _common_charts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @common/charts.service */ "./src/app/common/charts.service.ts");
+
+
+
 
 
 
 class BarChartComponent {
-    constructor() {
-        this.barChartOptions = {
-            responsive: true,
-        };
-        this.barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+    constructor(toastrService, chartsService) {
+        this.toastrService = toastrService;
+        this.chartsService = chartsService;
         this.barChartType = 'bar';
         this.barChartLegend = true;
         this.barChartPlugins = [];
-        this.barChartData = [
-            { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-            { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
-        ];
+        /* Misc: Settings initialized to default values */
+        this.borders = true;
     }
     ngOnInit() {
+        const bugs = this.chartsService.bugs(45, 80);
+        this.barChartData = bugs.map((year, i) => ({ label: year.label, data: Object.values(year.data) }));
+        this.barChartLabels = Object.keys(bugs[0].data);
+        this.barChartColors = this.getChartColors(bugs.length);
+        this.barChartOptions = {
+            responsive: true,
+            title: { text: 'Bugs per month', display: true },
+            elements: {
+                rectangle: {
+                    borderWidth: 2,
+                }
+            }
+        };
+        this.stackedBarChartOptions = {
+            responsive: true,
+            title: { text: 'Bugs per month stacked', display: true },
+            elements: {
+                rectangle: {
+                    borderWidth: 2,
+                }
+            },
+            scales: {
+                xAxes: [{
+                        stacked: true
+                    }],
+                yAxes: [{
+                        stacked: true
+                    }]
+            }
+        };
+    }
+    chartClicked(e) {
+        // const ref = this.chartRefs.toArray()[0];
+        // const ref = this.chartRefs.first;
+        const ref = this.chartRefs.find(r => r.options.title.text === 'Bugs per month');
+        const chartElement = ref.chart.getElementAtEvent(e.event)[0];
+        if (chartElement) {
+            // ref can be used to read data directly from chart
+            const index = chartElement._index;
+            const month = ref.labels[index];
+            const datasetIndex = chartElement._datasetIndex;
+            const dataset = ref.datasets[datasetIndex];
+            const value = dataset.data[index];
+            const year = dataset.label;
+            this.toastrService.success(`Bugs reported on ${month} ${year}: ${value}`);
+        }
+    }
+    stackedChartClicked(e) {
+        // const ref = this.chartRefs.toArray()[1];
+        // const ref = this.chartRefs.last;
+        // const ref = this.chartRefs.find(r => r.options.title.text === 'Bugs per month stacked');
+        // const chartElement = ref.chart.getElementAtEvent(e.event)[0] as BasicChartElement;
+        const chartElement = e.active[0]._chart.getElementAtEvent(e.event)[0];
+        if (chartElement) {
+            // local variable also can be used to access chart data since the chart is getting references to these
+            const index = chartElement._index;
+            const month = this.barChartLabels[index];
+            const datasetIndex = chartElement._datasetIndex;
+            const dataset = this.barChartData[datasetIndex];
+            const value = dataset.data[index];
+            const year = dataset.label;
+            this.toastrService.success(`Stacked chart: Bugs reported on ${month} ${year}: ${value}`);
+        }
+    }
+    toggleType() {
+        this.barChartType = this.barChartType === 'bar' ? 'horizontalBar' : 'bar';
+    }
+    toggleColors() {
+        const colors = this.getChartColors(this.barChartData.length);
+        // Any of following options work
+        // this.barChartColors = this.getChartColors(this.barChartData.length);
+        this.chartRefs.forEach(r => r.colors = colors);
+    }
+    toggleBorders() {
+        this.borders = !this.borders;
+        this.chartRefs.forEach(ref => {
+            ref.datasets.forEach(data => {
+                data.borderWidth = this.borders ? 2 : 0;
+                data.hoverBorderWidth = this.borders ? 3 : 0;
+            });
+        });
+        this.chartRefs.forEach(ref => ref.update());
+    }
+    getChartColors(n) {
+        return this.chartsService.getColors(n).map((c, i) => {
+            return {
+                // borderWidth: ,
+                backgroundColor: c.med,
+                borderColor: c.strong,
+                hoverBackgroundColor: c.strong,
+                hoverBorderColor: c.solid,
+                hoverBorderWidth: this.borders ? 3 : 0
+            };
+        });
     }
 }
-BarChartComponent.ɵfac = function BarChartComponent_Factory(t) { return new (t || BarChartComponent)(); };
-BarChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BarChartComponent, selectors: [["app-bar-chart"]], decls: 5, vars: 6, consts: [[1, "d-block"], ["baseChart", "", 3, "datasets", "labels", "options", "plugins", "legend", "chartType"]], template: function BarChartComponent_Template(rf, ctx) { if (rf & 1) {
+BarChartComponent.ɵfac = function BarChartComponent_Factory(t) { return new (t || BarChartComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"])); };
+BarChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BarChartComponent, selectors: [["app-bar-chart"]], viewQuery: function BarChartComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"], true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.chartRefs = _t);
+    } }, decls: 24, vars: 15, consts: [[1, "mt-3", "text-muted"], [1, "d-flex", "flex-row", "align-items-center"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", "mx-1", 3, "click"], [1, "text-muted", "small"], [1, "row"], [1, "col-lg-6"], [1, "d-block"], ["baseChart", "", "id", "barChart", 3, "datasets", "labels", "options", "plugins", "legend", "chartType", "colors", "chartClick"], ["baseChart", "", "id", "stackedChart", 3, "datasets", "labels", "options", "plugins", "legend", "chartType", "colors", "chartClick"]], template: function BarChartComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "BarChartComponent");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "hr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "canvas", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Click to toggle chart options");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BarChartComponent_Template_button_click_6_listener() { return ctx.toggleType(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BarChartComponent_Template_button_click_8_listener() { return ctx.toggleColors(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Colors");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "|");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BarChartComponent_Template_button_click_12_listener() { return ctx.toggleBorders(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Borders");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "|");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "canvas", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function BarChartComponent_Template_canvas_chartClick_20_listener($event) { return ctx.chartClicked($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "canvas", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function BarChartComponent_Template_canvas_chartClick_23_listener($event) { return ctx.stackedChartClicked($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("datasets", ctx.barChartData)("labels", ctx.barChartLabels)("options", ctx.barChartOptions)("plugins", ctx.barChartPlugins)("legend", ctx.barChartLegend)("chartType", ctx.barChartType);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.barChartType === "bar" ? "Horizontal" : "Vertical", " Chart ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("datasets", ctx.barChartData)("labels", ctx.barChartLabels)("options", ctx.barChartOptions)("plugins", ctx.barChartPlugins)("legend", ctx.barChartLegend)("chartType", ctx.barChartType)("colors", ctx.barChartColors);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("datasets", ctx.barChartData)("labels", ctx.barChartLabels)("options", ctx.stackedBarChartOptions)("plugins", ctx.barChartPlugins)("legend", ctx.barChartLegend)("chartType", ctx.barChartType)("colors", ctx.barChartColors);
     } }, directives: [ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0cy9iYXItY2hhcnQvYmFyLWNoYXJ0LmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BarChartComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -559,7 +761,10 @@ BarChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                 templateUrl: './bar-chart.component.html',
                 styleUrls: ['./bar-chart.component.scss']
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: _common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"] }, { type: _common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"] }]; }, { chartRefs: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
+            args: [ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"]]
+        }] }); })();
 
 
 /***/ }),
@@ -773,8 +978,8 @@ class LineChartComponent {
     constructor(toastrService, chartsService) {
         this.toastrService = toastrService;
         this.chartsService = chartsService;
-        this.lineChartLegend = true;
         this.lineChartType = 'line';
+        this.lineChartLegend = true;
         this.lineChartPlugins = [];
         /* Misc: Settings initialized to default values */
         this.fill = true;
@@ -785,14 +990,10 @@ class LineChartComponent {
         this.steppedStyle = false;
     }
     ngOnInit() {
-        this.lineChartData = [
-            { data: [65, 59, 80, 81, 56, 55, 40, 11, 78], label: '2018', fill: this.fill },
-            { data: [59, 64, 21, 26, 66, 7, 29, 34, 19], label: '2019', fill: this.fill },
-            { data: [31, 9, 58, 23, 49, 96, 74, 29, 26], label: '2020', fill: this.fill }
-        ];
-        this.lineChartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'];
+        const bugs = this.chartsService.bugs(15, 45);
+        this.lineChartData = bugs.map(y => ({ label: y.label, data: Object.values(y.data) }));
+        this.lineChartLabels = Object.keys(bugs[0].data);
         this.lineChartOptions = {
-            responsive: true,
             title: {
                 display: true,
                 text: 'Bugs per month'
@@ -801,45 +1002,42 @@ class LineChartComponent {
                 point: {
                     pointStyle: this.pointStyle,
                     radius: this.radius
-                },
+                }
             }
         };
         this.lineChartColors = this.getChartColors(this.lineChartData.length);
     }
     chartClicked(e) {
-        const chartElement = this.chart.chart.getElementAtEvent(e.event)[0];
+        const chartElement = this.chartRef.chart.getElementAtEvent(e.event)[0];
         if (chartElement) {
             const index = chartElement._index;
-            const month = this.chart.labels[index];
+            const month = this.chartRef.labels[index];
             const datasetIndex = chartElement._datasetIndex;
-            const dataset = this.chart.datasets[datasetIndex];
+            const dataset = this.chartRef.datasets[datasetIndex];
             const value = dataset.data[index];
             const year = dataset.label;
             this.toastrService.success(`Bugs reported on ${month} ${year}: ${value}`);
         }
     }
-    chartHovered({ event, active }) {
-        console.log(event, active);
-    }
     toggleFill() {
         this.fill = !this.fill;
         // Any of following options work
         // this.lineChartData.forEach(data => data.fill = this.fill);
-        this.chart.datasets.forEach(data => data.fill = this.fill);
-        this.chart.update();
+        this.chartRef.datasets.forEach(data => data.fill = this.fill);
+        this.chartRef.update();
     }
     toggleColors() {
         // Any of following options work
-        // this.lineChartColors = this.getChartColors(this.chart.datasets.length);
-        this.chart.colors = this.getChartColors(this.chart.datasets.length);
+        // this.lineChartColors = this.getChartColors(this.chartRef.datasets.length);
+        this.chartRef.colors = this.getChartColors(this.chartRef.datasets.length);
     }
     togglePointStyle() {
         const nextStyleIndex = (this.pointStyles.indexOf(this.pointStyle) + 1) % this.pointStyles.length;
         this.pointStyle = this.pointStyles[nextStyleIndex];
         // Any of following options work
-        this.lineChartData.forEach(data => data.pointStyle = this.pointStyle);
-        // this.chart.datasets.forEach(data => data.pointStyle = this.pointStyle);
-        this.chart.update();
+        // this.lineChartData.forEach(data => data.pointStyle = this.pointStyle);
+        this.chartRef.datasets.forEach(data => data.pointStyle = this.pointStyle);
+        this.chartRef.update();
     }
     toggleChartType() {
         this.lineChartType = this.lineChartType === 'line' ? 'bar' : 'line';
@@ -857,9 +1055,9 @@ class LineChartComponent {
         }
         this.steppedStyle = this.steppedStyles[nextStyleIndex];
         // Any of following options work
-        this.lineChartData.forEach(data => data.steppedLine = this.steppedStyle);
-        // this.chart.datasets.forEach(data => data.steppedLine = this.steppedStyle);
-        this.chart.update();
+        // this.lineChartData.forEach(data => data.steppedLine = this.steppedStyle);
+        this.chartRef.datasets.forEach(data => data.steppedLine = this.steppedStyle);
+        this.chartRef.update();
     }
     updateRadius(radius) {
         radius += this.radius;
@@ -867,11 +1065,12 @@ class LineChartComponent {
             return;
         }
         this.radius = radius;
-        this.lineChartData.forEach(data => data.radius = this.radius);
-        this.chart.update();
+        // this.lineChartData.forEach(data => data.radius = this.radius);
+        this.chartRef.datasets.forEach(data => data.radius = this.radius);
+        this.chartRef.update();
     }
     getChartColors(n) {
-        return this.chartsService.getColors(n).map(c => ({ borderColor: c.solid, backgroundColor: c.background }));
+        return this.chartsService.getColors(n).map(c => ({ borderColor: c.solid, backgroundColor: c.light }));
     }
 }
 LineChartComponent.ɵfac = function LineChartComponent_Factory(t) { return new (t || LineChartComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"])); };
@@ -879,8 +1078,8 @@ LineChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"], true);
     } if (rf & 2) {
         var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.chart = _t.first);
-    } }, decls: 18, vars: 9, consts: [[1, "mt-3", "text-muted"], [1, "d-flex", "flex-row", "align-items-center"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", "mx-1", 3, "click"], [4, "ngIf"], [1, "d-block"], ["baseChart", "", 3, "datasets", "labels", "options", "colors", "legend", "chartType", "plugins", "chartClick", "chartHover"], [1, "text-muted", "small"], [1, "m-0"], [1, "mx-3", "text-muted"], [1, "input-group", "w-auto", "align-items-center"], [1, "input-group-prepend"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", 3, "click"], [1, "mx-1"], [1, "input-group-append"]], template: function LineChartComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.chartRef = _t.first);
+    } }, decls: 18, vars: 9, consts: [[1, "mt-3", "text-muted"], [1, "d-flex", "flex-row", "align-items-center"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", "mx-1", 3, "click"], [4, "ngIf"], [1, "d-block"], ["baseChart", "", 3, "datasets", "labels", "options", "colors", "legend", "chartType", "plugins", "chartClick"], [1, "text-muted", "small"], [1, "m-0"], [1, "mx-3", "text-muted"], [1, "input-group", "w-auto", "align-items-center"], [1, "input-group-prepend"], ["type", "button", 1, "btn", "btn-secondary", "btn-sm", 3, "click"], [1, "mx-1"], [1, "input-group-append"]], template: function LineChartComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "LineChartComponent");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -898,7 +1097,7 @@ LineChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "hr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "canvas", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function LineChartComponent_Template_canvas_chartClick_11_listener($event) { return ctx.chartClicked($event); })("chartHover", function LineChartComponent_Template_canvas_chartHover_11_listener($event) { return ctx.chartHovered($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("chartClick", function LineChartComponent_Template_canvas_chartClick_11_listener($event) { return ctx.chartClicked($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "hr");
@@ -925,7 +1124,7 @@ LineChartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
                 templateUrl: './line-chart.component.html',
                 styleUrls: ['./line-chart.component.scss']
             }]
-    }], function () { return [{ type: _common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"] }, { type: _common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"] }]; }, { chart: [{
+    }], function () { return [{ type: _common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"] }, { type: _common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"] }]; }, { chartRef: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
             args: [ng2_charts__WEBPACK_IMPORTED_MODULE_1__["BaseChartDirective"], { static: true }]
         }] }); })();
@@ -1170,16 +1369,32 @@ __webpack_require__.r(__webpack_exports__);
 
 class ChartsService {
     constructor() {
+        this.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        this.years = ['2018', '2019', '2020'];
         this.palette = [
-            { hex: '#003f5c', solid: 'rgba(0, 63, 92, 1)', background: 'rgba(0, 63, 92, 0.2)' },
-            { hex: '#2f4b7c', solid: 'rgba(47,75,124,1)', background: 'rgba(47,75,124,0.2)' },
-            { hex: '#665191', solid: 'rgba(102,81,145,1)', background: 'rgba(102,81,145,0.2)' },
-            { hex: '#a05195', solid: 'rgba(160,81,149,1)', background: 'rgba(160,81,149,0.2)' },
-            { hex: '#d45087', solid: 'rgba(212,80,135,1)', background: 'rgba(212,80,135,0.2)' },
-            { hex: '#f95d6a', solid: 'rgba(249,93,106,1)', background: 'rgba(249,93,106,0.2)' },
-            { hex: '#ff7c43', solid: 'rgba(255,124,67,1)', background: 'rgba(255,124,67,0.2)' },
-            { hex: '#ffa600', solid: 'rgba(255,166,0,1)', background: 'rgba(255,166,0,0.2)' }
+            { hex: '#003f5c', solid: 'rgba(0,63,92,1)', strong: 'rgba(0,63,92,0.75)', med: 'rgba(0,63,92,0.5)', light: 'rgba(0,63,92,0.2)' },
+            { hex: '#2f4b7c', solid: 'rgba(47,75,124,1)', strong: 'rgba(47,75,124,0.75)', med: 'rgba(47,75,124,0.5)', light: 'rgba(47,75,124,0.2)' },
+            { hex: '#665191', solid: 'rgba(102,81,145,1)', strong: 'rgba(102,81,145,0.75)', med: 'rgba(102,81,145,0.5)', light: 'rgba(102,81,145,0.2)' },
+            { hex: '#a05195', solid: 'rgba(160,81,149,1)', strong: 'rgba(160,81,149,0.75)', med: 'rgba(160,81,149,0.5)', light: 'rgba(160,81,149,0.2)' },
+            { hex: '#d45087', solid: 'rgba(212,80,135,1)', strong: 'rgba(212,80,135,0.75)', med: 'rgba(212,80,135,0.5)', light: 'rgba(212,80,135,0.2)' },
+            { hex: '#f95d6a', solid: 'rgba(249,93,106,1)', strong: 'rgba(249,93,106,0.75)', med: 'rgba(249,93,106,0.5)', light: 'rgba(249,93,106,0.2)' },
+            { hex: '#ff7c43', solid: 'rgba(255,124,67,1)', strong: 'rgba(255,124,67,0.75)', med: 'rgba(255,124,67,0.5)', light: 'rgba(255,124,67,0.2)' },
+            { hex: '#ffa600', solid: 'rgba(255,166,0,1)', strong: 'rgba(255,166,0,0.75)', med: 'rgba(255,166,0,0.5)', light: 'rgba(255,166,0,0.2)' }
         ];
+    }
+    /**
+     * Returns fake data within the specied range
+     * @min lower limit for data series generation
+     * @max higher limit for data series generation
+     */
+    bugs(min = 25, max = 125) {
+        return this.years.map(y => ({
+            label: y,
+            data: this.months.reduce((acc, m) => {
+                acc[m] = Math.floor(Math.random() * (max - min) + min);
+                return acc;
+            }, {})
+        }));
     }
     /**
      * Returns a array of colors from the main palette
@@ -1245,92 +1460,120 @@ ToastrService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInj
 
 /***/ }),
 
-/***/ "./src/app/home/home.component.ts":
+/***/ "./src/app/line/line.component.ts":
 /*!****************************************!*\
-  !*** ./src/app/home/home.component.ts ***!
+  !*** ./src/app/line/line.component.ts ***!
   \****************************************/
-/*! exports provided: HomeComponent */
+/*! exports provided: LineComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineComponent", function() { return LineComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../charts/line-chart/line-chart.component */ "./src/app/charts/line-chart/line-chart.component.ts");
-/* harmony import */ var _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../charts/bar-chart/bar-chart.component */ "./src/app/charts/bar-chart/bar-chart.component.ts");
-/* harmony import */ var _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../charts/radar-chart/radar-chart.component */ "./src/app/charts/radar-chart/radar-chart.component.ts");
-/* harmony import */ var _charts_pie_chart_pie_chart_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../charts/pie-chart/pie-chart.component */ "./src/app/charts/pie-chart/pie-chart.component.ts");
-/* harmony import */ var _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../charts/polar-area-chart/polar-area-chart.component */ "./src/app/charts/polar-area-chart/polar-area-chart.component.ts");
-/* harmony import */ var _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../charts/doughnut-chart/doughnut-chart.component */ "./src/app/charts/doughnut-chart/doughnut-chart.component.ts");
-/* harmony import */ var _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../charts/bubble-chart/bubble-chart.component */ "./src/app/charts/bubble-chart/bubble-chart.component.ts");
-/* harmony import */ var _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../charts/scatter-chart/scatter-chart.component */ "./src/app/charts/scatter-chart/scatter-chart.component.ts");
 
 
 
-
-
-
-
-
-
-
-class HomeComponent {
+class LineComponent {
     constructor() { }
     ngOnInit() {
     }
 }
-HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 30, vars: 0, consts: [[1, "row", "mt-3"], [1, "col-md-8", "offset-md-2"], [1, "jumbotron"], [1, "lead", "text-center"], ["href", "https://www.npmjs.com/package/ng2-charts-schematics", "target", "_blank", "rel", "noopener noreferrer"], [1, "row"], [1, "col-md-6"], [1, "w-100", "py-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+LineComponent.ɵfac = function LineComponent_Factory(t) { return new (t || LineComponent)(); };
+LineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: LineComponent, selectors: [["app-line"]], decls: 3, vars: 0, consts: [[1, "row", "mt-3"], [1, "col-md-8", "offset-md-2"]], template: function LineComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-line-chart");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "hr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " All components were generated using ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "ng2-charts-schematics");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, ". From here all remain almost untouched ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "app-bar-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "app-radar-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "app-pie-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "app-polar-area-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "app-doughnut-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "app-bubble-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "app-scatter-chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_1__["LineChartComponent"], _charts_bar_chart_bar_chart_component__WEBPACK_IMPORTED_MODULE_2__["BarChartComponent"], _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_3__["RadarChartComponent"], _charts_pie_chart_pie_chart_component__WEBPACK_IMPORTED_MODULE_4__["PieChartComponent"], _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_5__["PolarAreaChartComponent"], _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_6__["DoughnutChartComponent"], _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_7__["BubbleChartComponent"], _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_8__["ScatterChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJ9 */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
+    } }, directives: [_charts_line_chart_line_chart_component__WEBPACK_IMPORTED_MODULE_1__["LineChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpbmUvbGluZS5jb21wb25lbnQuc2NzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LineComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'app-home',
-                templateUrl: './home.component.html',
-                styleUrls: ['./home.component.scss']
+                selector: 'app-line',
+                templateUrl: './line.component.html',
+                styleUrls: ['./line.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/other-charts/other-charts.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/other-charts/other-charts.component.ts ***!
+  \********************************************************/
+/*! exports provided: OtherChartsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OtherChartsComponent", function() { return OtherChartsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../charts/radar-chart/radar-chart.component */ "./src/app/charts/radar-chart/radar-chart.component.ts");
+/* harmony import */ var _charts_pie_chart_pie_chart_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../charts/pie-chart/pie-chart.component */ "./src/app/charts/pie-chart/pie-chart.component.ts");
+/* harmony import */ var _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../charts/polar-area-chart/polar-area-chart.component */ "./src/app/charts/polar-area-chart/polar-area-chart.component.ts");
+/* harmony import */ var _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../charts/doughnut-chart/doughnut-chart.component */ "./src/app/charts/doughnut-chart/doughnut-chart.component.ts");
+/* harmony import */ var _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../charts/bubble-chart/bubble-chart.component */ "./src/app/charts/bubble-chart/bubble-chart.component.ts");
+/* harmony import */ var _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../charts/scatter-chart/scatter-chart.component */ "./src/app/charts/scatter-chart/scatter-chart.component.ts");
+
+
+
+
+
+
+
+
+class OtherChartsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+OtherChartsComponent.ɵfac = function OtherChartsComponent_Factory(t) { return new (t || OtherChartsComponent)(); };
+OtherChartsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: OtherChartsComponent, selectors: [["app-other-charts"]], decls: 25, vars: 0, consts: [[1, "jumbotron", "my-3"], [1, "lead", "text-center"], ["href", "https://www.npmjs.com/package/ng2-charts-schematics", "target", "_blank", "rel", "noopener noreferrer"], [1, "row"], [1, "col-md-6"]], template: function OtherChartsComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " All components were generated using ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "ng2-charts-schematics");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, ". From here all remain almost untouched ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "app-radar-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "app-pie-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-polar-area-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "app-doughnut-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "app-bubble-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "app-scatter-chart");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_charts_radar_chart_radar_chart_component__WEBPACK_IMPORTED_MODULE_1__["RadarChartComponent"], _charts_pie_chart_pie_chart_component__WEBPACK_IMPORTED_MODULE_2__["PieChartComponent"], _charts_polar_area_chart_polar_area_chart_component__WEBPACK_IMPORTED_MODULE_3__["PolarAreaChartComponent"], _charts_doughnut_chart_doughnut_chart_component__WEBPACK_IMPORTED_MODULE_4__["DoughnutChartComponent"], _charts_bubble_chart_bubble_chart_component__WEBPACK_IMPORTED_MODULE_5__["BubbleChartComponent"], _charts_scatter_chart_scatter_chart_component__WEBPACK_IMPORTED_MODULE_6__["ScatterChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL290aGVyLWNoYXJ0cy9vdGhlci1jaGFydHMuY29tcG9uZW50LnNjc3MifQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](OtherChartsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-other-charts',
+                templateUrl: './other-charts.component.html',
+                styleUrls: ['./other-charts.component.scss']
             }]
     }], function () { return []; }, null); })();
 
