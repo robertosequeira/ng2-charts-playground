@@ -1078,7 +1078,11 @@ class LineChartComponent {
         this.chartRef.update();
     }
     getChartColors(n) {
-        return this.chartsService.getColors(n).map(c => ({ borderColor: c.solid, backgroundColor: c.light }));
+        return this.chartsService.getColors(n).map(c => ({
+            borderColor: c.solid,
+            backgroundColor: c.light,
+            hoverBackgroundColor: c.strong // required for bar chart
+        }));
     }
 }
 LineChartComponent.ɵfac = function LineChartComponent_Factory(t) { return new (t || LineChartComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_toastr_service__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_common_charts_service__WEBPACK_IMPORTED_MODULE_3__["ChartsService"])); };
