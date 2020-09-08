@@ -136,6 +136,10 @@ export class LineChartComponent implements OnInit {
   }
 
   public getChartColors(n: number): Color[] {
-    return this.chartsService.getColors(n).map(c => ({ borderColor: c.solid, backgroundColor: c.light }));
+    return this.chartsService.getColors(n).map(c => ({
+      borderColor: c.solid,
+      backgroundColor: c.light,
+      hoverBackgroundColor: c.strong // required for bar chart
+    }));
   }
 }
